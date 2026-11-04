@@ -482,7 +482,8 @@
       <p style="font-size: 14px; margin-top: 10px; opacity: 0.95; position: relative; z-index: 2;">Left until the event day</p>
       <p class="see-you-text">See you there!</p>
 
-      <button class="btn-edit" onclick="showForm()">Edit info</button>
+      <!-- Button updated to Resend info -->
+      <button class="btn-edit" onclick="showForm()">Resend info</button>
     </div>
 
     <!-- TELEGRAM GROUPS LINKS -->
@@ -574,7 +575,7 @@
     });
 
     function showForm() {
-      // Clear registration state so they can edit/re-register if needed via Edit info button
+      // Clear registration state so they can re-register/resend info
       localStorage.removeItem('isRegistered');
 
       document.getElementById('form-card-view').classList.remove('hidden');
